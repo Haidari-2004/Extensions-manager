@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frontend Mentor | Browser extensions manager UI</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="main-header">
+    <img src="./assets/images/logo.svg" alt="logo" class="logo">
+    <img src="./assets/images/icon-sun.svg" alt="theme toggle" class="theme-icon">
+  </header>
+
+  <section class="top-bar">
+    <h2 class="extension-list">Extension List</h2>
+    <div class="filters">
+      <button data-filter="all"     class="btn ">All</button>
+      <button data-filter="active"  class="btn">Active</button>
+      <button data-filter="inactive"class="btn">Inactive</button>
+    </div>
+  </section>
+
+  <main class="extensions">
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-devlens.svg" alt="logo-devlens">
+        <h3>DevLens</h3>
+      </div>
+      <p>Quickly inspect page layout and visualize boundaries.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-style-spy.svg" alt="logo-style-spy">
+        <h3>StyleSpy</h3>
+      </div>
+      <p>Instantly analyze and copy CSS from any webpage element.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle "></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-speed-boost.svg" alt="logo-speed-boost">
+        <h3>SpeedBoost</h3>
+      </div>
+      <p>Optimize browser resource usage to accelerate page loading.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-json-wizard.svg" alt="logo-json-wizard">
+        <h3>JSONWizard</h3>
+      </div>
+      <p>Formats, validates, and prettifies JSON responses.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-tab-master-pro.svg" alt="logo-tab-master-pro">
+        <h3>TabMaster Pro</h3>
+      </div>
+      <p>Organizes browser tabs into groups and sessions.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-viewport-buddy.svg" alt="logo-viewport-buddy">
+        <h3>ViewportBuddy</h3>
+      </div>
+      <p>Simulates various screen resolutions directly in browser.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-markup-notes.svg" alt="logo-markup-notes">
+        <h3>Markup Notes</h3>
+      </div>
+      <p>Enables annatation and note directly onto webpages for collaborative debugging.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-grid-guides.svg" alt="logo-grid-guides">
+        <h3>Grid Guides</h3>
+      </div>
+      <p>Overly customise grids and alignment guides on any webpage.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-palette-picker.svg" alt="logo-palette-picker">
+        <h3>Palete Picker</h3>
+      </div>
+      <p>Instantly extracts color palettes from any webpage.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-link-checker.svg" alt="logo-palette-picker">
+        <h3>Link Checker</h3>
+      </div>
+      <p>Scan and haighlits broken links on any page.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-dom-snapshot.svg" alt="logo-dom-snapshot">
+        <h3>DOM Snapshot</h3>
+      </div>
+      <p>Captyre and export DOM structures quickly.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <div class="card-header">
+        <img src="./assets/images/logo-console-plus.svg" alt="logo-console-plus">
+        <h3>ConsolePlus </h3>
+      </div>
+      <p>Enhansed developers console with advance filtering and logging.</p>
+      <div class="card-footer">
+        <button class="remove">Remove</button>
+        <div class="toggle active"></div>
+      </div>
+    </article> 
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io">Frontend Mentor</a>.
+    Coded by <a href="https://www.instagram.com/ahmad_rishad_haidari?igsh=MTJ1aXJmYTUwazl3bw%3+D%3D&utm_source=qr">AhmadRishadhHaidari</a>
+  </footer> 
+  <script src="javascript.js"></script>
+</body>
+</html>
